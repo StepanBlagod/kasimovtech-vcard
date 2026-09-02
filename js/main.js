@@ -57,3 +57,18 @@
   onScroll();
   window.addEventListener('scroll', onScroll, { passive: true });
 })();
+
+// Scroll progress bar
+(function () {
+  const bar = document.querySelector('.scroll-progress');
+  if (!bar) return;
+  const update = () => {
+    const h = document.documentElement;
+    const max = h.scrollHeight - h.clientHeight;
+    const pct = max > 0 ? (h.scrollTop / max) * 100 : 0;
+    bar.style.width = pct + '%';
+  };
+  update();
+  window.addEventListener('scroll', update, { passive: true });
+  window.addEventListener('resize', update);
+})();

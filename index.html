@@ -3,77 +3,111 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Касимов Техно — Сборка, ремонт и апгрейд ПК</title>
-  <meta name="description" content="Компьютерная мастерская в Касимове. Сборка ПК под ключ, апгрейд, диагностика 0 ₽, чистка, установка Windows. Гарантия до 3 лет.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23050505'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%238B5CF6'/%3E%3C/svg%3E">
+  <title>Касимов Техно — компьютерная мастерская в Касимове</title>
+  <meta name="description" content="Собираем, чиним и усиливаем компьютеры в Касимове. Сборка под ключ, апгрейд, диагностика бесплатно, гарантия на работы до 3 лет.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cg fill='none' stroke='%238B5CF6' stroke-width='1.6'%3E%3Ccircle cx='16' cy='16' r='9'/%3E%3Ccircle cx='16' cy='16' r='3.4'/%3E%3Cpath d='M16 5v3M16 24v3M5 16h3M24 16h3M7.8 7.8l2.1 2.1M22.1 22.1l2.1 2.1M24.2 7.8l-2.1 2.1M9.8 22.1l-2.1 2.1'/%3E%3C/g%3E%3C/svg%3E">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <div class="noise" aria-hidden="true"></div>
   <div class="cursor-dot" aria-hidden="true"></div>
   <div class="cursor-ring" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"></div>
 
   <!-- Navbar -->
   <header class="navbar">
-    <a href="#" class="nav-logo" data-cursor>
-      <span class="dot"></span>
+    <a href="#top" class="nav-logo" data-cursor aria-label="Касимов Техно — на главную">
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7">
+          <circle cx="16" cy="16" r="9"/>
+          <circle cx="16" cy="16" r="3.2"/>
+          <path d="M16 4.5v3M16 24.5v3M4.5 16h3M24.5 16h3M8 8l2.1 2.1M24 24l2.1 2.1M24 8l-2.1 2.1M8 24l2.1-2.1" stroke-linecap="round"/>
+        </svg>
+      </span>
       <span>Касимов<span class="logo-accent"> Техно</span></span>
     </a>
     <nav class="nav-links">
       <a href="#services" data-cursor>Услуги</a>
-      <a href="#flagship" data-cursor>Сборки</a>
-      <a href="#works" data-cursor>Работы</a>
+      <a href="#build" data-cursor>Сборка</a>
       <a href="#process" data-cursor>Процесс</a>
-      <a href="#contact" class="nav-cta" data-cursor>Связаться</a>
+      <a href="#contact" class="nav-cta" data-cursor>Записаться</a>
     </nav>
+    <div class="nav-social">
+      <a href="https://vk.com/kasimovtehno" target="_blank" rel="noopener" aria-label="ВКонтакте" data-cursor>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.9 17.5c-4.6 0-7.5-3.1-7.6-8.3h2.3c.1 3.7 2 5.5 3.6 5.9V9.2h2.1v3.4c1.6-.1 3.2-2 3.7-3.4h2.1c-.4 2.2-2 4.1-3.1 4.9 1.2.6 2.7 2.3 3.3 5-1 .5-2.4 1-3.9 1z" transform="translate(-.5 -2) scale(.95) translate(0 2)"/></svg>
+      </a>
+      <a href="https://t.me/KasimovTehno" target="_blank" rel="noopener" aria-label="Telegram" data-cursor>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3 2.6 11.5c-1 .4-1 1.8.1 2.2l4.4 1.4 1.7 5.2c.3.9 1.4 1.1 2 .4l2.4-2.4 4.4 3.3c.7.5 1.7.1 1.9-.7l3-13.3c.2-1-.7-1.9-1.6-1.6z"/></svg>
+      </a>
+    </div>
   </header>
 
   <!-- Hero -->
-  <section class="hero">
+  <section class="hero" id="top">
     <video class="hero-video" autoplay muted loop playsinline preload="metadata">
       <source src="static/videos/hero-bg.mp4" type="video/mp4">
     </video>
     <div class="hero-overlay" aria-hidden="true"></div>
     <div class="hero-content">
-      <span class="mono-label">// Касимов Техно — г. Касимов</span>
+      <span class="mono-label reveal d1">// Компьютерная мастерская — г. Касимов</span>
       <h1 class="hero-title">
-        Железо,<br><span class="accent">сделанное вручную</span>
+        <span class="line"><span>Компьютеры</span></span>
+        <span class="line"><span>под ключ.</span></span>
       </h1>
       <p class="hero-sub">
-        Собираем, чиним и усиливаем компьютеры. Диагностика — 0 ₽.
-        Гарантия на работы до 3 лет. Работаем с душой, как для себя.
+        Собираем, чиним и усиливаем ПК. Диагностика бесплатно,
+        гарантия на работы до трёх лет. Работаем как для себя.
       </p>
       <div class="hero-actions">
-        <a href="#contact" class="btn btn-primary" data-cursor>Записаться</a>
-        <a href="#services" class="btn btn-ghost" data-cursor>Что мы делаем</a>
+        <a href="#contact" class="btn btn-primary" data-cursor>Записаться <span class="btn-arrow">→</span></a>
+        <a href="https://vk.com/kasimovtehno" target="_blank" rel="noopener" class="btn btn-ghost" data-cursor>Группа ВКонтакте</a>
       </div>
     </div>
     <div class="scroll-indicator" aria-hidden="true">
-      <span>Scroll</span>
+      <span>Листайте</span>
       <div class="line"></div>
     </div>
   </section>
 
-  <!-- Marquee / stats strip -->
+  <!-- Stats strip -->
   <section class="stats-strip">
     <div class="stats-inner">
       <div class="stat"><b>0 ₽</b><span>Диагностика</span></div>
-      <div class="stat"><b>до 3 лет</b><span>Гарантия</span></div>
+      <div class="stat"><b>до 3 лет</b><span>Гарантия на работы</span></div>
       <div class="stat"><b>10:00–21:00</b><span>Без выходных</span></div>
-      <div class="stat"><b>24/7</b><span>Онлайн-поддержка</span></div>
+      <div class="stat"><b>Бессрочно</b><span>Поддержка</span></div>
     </div>
   </section>
 
-  <!-- Philosophy -->
-  <section class="section philosophy">
-    <div class="container reveal">
-      <span class="mono-label eyebrow">// 01 — Подход</span>
-      <div class="big">Вернём жизнь.<br><span class="accent">Исправим всё.</span></div>
+  <!-- Detail banner (attention to detail) — сразу после hero -->
+  <section class="detail-banner">
+    <img src="static/images/builds/build-4.webp" alt="Кабель-менеджмент и компоновка" loading="lazy">
+    <div class="detail-caption">
+      <span class="mono-label">Внимание к деталям</span>
       <p>
-        Не продаём готовое — подбираем компоненты под ваши задачи и бюджет,
-        а потом отвечаем за результат. Каждый компьютер проходит диагностику,
-        стресс-тесты и чистый кабель-менеджмент.
+        Следим за каждой деталью, чтобы вы наслаждались качеством сборки. Материалами, температурой
+        и тишиной. Результат, который не стыдно показать.
       </p>
+    </div>
+  </section>
+
+  <!-- Approach -->
+  <section class="section approach">
+    <div class="container">
+      <div class="approach-grid">
+        <div class="reveal">
+          <span class="mono-label eyebrow">// 01 — Подход</span>
+          <div class="big">Чиним и собираем<br><span class="accent">как для себя.</span></div>
+          <p>
+            Каждый компьютер проходит диагностику, стресс-тесты под нагрузкой
+            и аккуратную сборку. Подбираем комплектующие под задачи и бюджет,
+            а потом отвечаем за результат — а не за коробку.
+          </p>
+        </div>
+        <div class="approach-photo reveal">
+          <img src="static/images/builds/build-3.webp" alt="Детали сборки" loading="lazy">
+        </div>
+      </div>
     </div>
   </section>
 
@@ -87,113 +121,98 @@
       <div class="services-grid">
         <article class="card reveal">
           <div class="card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M1 9h3M1 15h3M20 9h3M20 15h3"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="1"/><rect x="9.5" y="9.5" width="5" height="5"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg>
           </div>
           <h3>Сборка под ключ</h3>
-          <p>Полный ПК под ваши задачи: подбор комплектующих, сборка, настройка и стресс-тесты. Чистая система в комплекте.</p>
+          <p>Полный компьютер под ваши задачи: подбор комплектующих, сборка, установка Windows, драйверы и оптимизация. Даём готовый к работе ПК.</p>
         </article>
         <article class="card reveal">
           <div class="card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V8M8 12l4-4 4 4M4 4h16"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15l6-6 4 4 6-6"/><path d="M14 7h6v6"/></svg>
           </div>
           <h3>Апгрейд</h3>
-          <p>Усилим существующую систему: видеокарта, память, SSD — туда, где это реально нужно. Каждая тысяча даёт прирост.</p>
+          <p>Усиливаем то, что уже есть: видеокарта, память, SSD — туда, где это даст прирост. Не пересобираем систему, если в этом нет смысла.</p>
         </article>
         <article class="card reveal">
           <div class="card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 1 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4z"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2.5-6 3 12 2.5-6H21"/></svg>
           </div>
           <h3>Диагностика — 0 ₽</h3>
-          <p>Первичная проверка: железо, температуры, SSD/ОЗУ. Даём смету, ничего без согласования. Откажетесь — не платите.</p>
+          <p>Проверяем железо, температуры, SSD и память. Даём смету и решение. Не нашли проблему или вы отказались — не платите.</p>
         </article>
         <article class="card reveal">
           <div class="card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l2.8 2.8M16.2 16.2 19 19M5 19l2.8-2.8M16.2 7.8 19 5"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2.2"/><path d="M12 4a8 8 0 0 1 8 8M12 20a8 8 0 0 1-8-8M6 12h3M15 12h3M12 6v3M12 15v3"/></svg>
           </div>
           <h3>Чистка и термопаста</h3>
-          <p>Ремонт охлаждения: замена термопасты, чистка от пыли, устранение перегрева и шумов. Ноутбук перестанет греться.</p>
+          <p>Чистим от пыли, меняем термопасту, убираем перегрев и шум. Компьютер и ноутбук работают тише и холоднее.</p>
         </article>
         <article class="card reveal">
           <div class="card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M8 20h8M12 16v4"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="1"/><path d="M8 20h8M12 17v3M7 8h6M7 11h4"/></svg>
           </div>
           <h3>Установка Windows</h3>
-          <p>Чистая установка системы, драйверы, оптимизация автозагрузки. Компьютер готов к работе — не к донастройке.</p>
+          <p>Чистая установка системы, все драйверы, настройка автозагрузки. Всё под ключ — включили и пользуетесь.</p>
         </article>
         <article class="card reveal">
           <div class="card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8l4 4-4 4M7 8l-4 4 4 4M3 12h18"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h10M18 8h2M4 16h2M10 16h10"/><circle cx="16" cy="8" r="2"/><circle cx="8" cy="16" r="2"/></svg>
+          </div>
+          <h3>Подбор конфигурации</h3>
+          <p>Соберём конфигурацию под задачи и бюджет: игры, работа, монтаж. Расскажем, где можно сэкономить, а где — нет.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <h3>Сервис и гарантия</h3>
+          <p>Берём в работу по гарантии, до трёх лет на работы. Если что-то пошло не так после сдачи — разбираемся.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4l4 4-4 4M20 8H8M8 16l-4-4 4-4M4 12h12"/></svg>
           </div>
           <h3>Трейд-ин</h3>
-          <p>Принесите старый ПК или комплектующие — оценим и вычтем из цены нового. Не нужно разбираться в железе.</p>
+          <p>Принесите старый компьютер или комплектующие — оценим и учтём в стоимость нового. Разбираться в железе не нужно.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- Flagship build -->
-  <section id="flagship" class="section">
+  <!-- Build (flagship) -->
+  <section id="build" class="section">
     <div class="container">
-      <div class="reveal">
-        <span class="mono-label eyebrow">// 03 — Флагман</span>
-        <h2 class="section-title">DEEPZONE CORE</h2>
-        <p class="lead">Готовая премиум-сборка. Установлена Windows 11 Pro и набор игр — включил и играешь. Ниже магазинной цены на 15–25 тысяч.</p>
-      </div>
-      <div class="flagship-grid">
-        <div class="flagship-specs reveal">
-          <div class="spec"><span>Видеокарта</span><b>RTX 4060 Ti 8GB</b></div>
-          <div class="spec"><span>Процессор</span><b>Intel Core i5-12400F</b></div>
-          <div class="spec"><span>Память</span><b>32 GB DDR4 3200</b></div>
-          <div class="spec"><span>Накопитель</span><b>512 GB SSD</b></div>
-          <div class="spec"><span>Охлаждение</span><b>Водяное Deepcool</b></div>
-          <div class="spec"><span>Корпус</span><b>Deepcool Matrexx 55</b></div>
-        </div>
-        <div class="flagship-note reveal">
-          <span class="mono-label">Гарантия мастерской + поддержка 24/7</span>
-          <p>Каждая сборка проходит проверку совместимости и BIOS, длительные стресс-тесты и чистый кабель-менеджмент.</p>
-          <a href="#contact" class="btn btn-ghost" data-cursor>Узнать наличие</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Works -->
-  <section id="works" class="section section-alt">
-    <div class="container">
-      <div class="reveal">
-        <span class="mono-label eyebrow">// 04 — Работы</span>
-        <h2 class="section-title">Реальная сборка</h2>
-        <p class="lead">Один компьютер. Общий вид и крупные детали: охлаждение, кабель-менеджмент, компоновка.</p>
-      </div>
-      <div class="works-grid">
-        <div class="work work-main reveal">
+      <div class="build-grid">
+        <div class="build-photo reveal">
           <img src="static/images/builds/build-1p.webp" alt="Игровая сборка — общий вид" loading="lazy">
-          <div class="work-info">
-            <span class="mono-label">Общий вид</span>
-            <h3>Игровая сборка</h3>
+          <span class="build-tag mono-label">Готово к работе</span>
+        </div>
+        <div class="build-info reveal">
+          <span class="mono-label eyebrow">// 03 — Сборка</span>
+          <h2 class="section-title">Игровая сборка</h2>
+          <p class="lead">
+            Готовый игровой компьютер под ключ. Windows и драйверы
+            уже установлены — включили и играете. Ниже магазинной цены.
+          </p>
+          <div class="spec-list">
+            <div class="spec"><span>Видеокарта</span><b>RTX 5060 Ti 16 GB</b></div>
+            <div class="spec"><span>Процессор</span><b>Intel Core i5-14400F</b></div>
+            <div class="spec"><span>Память</span><b>32 GB DDR5</b></div>
+            <div class="spec"><span>Накопитель</span><b>1 TB NVMe SSD</b></div>
+            <div class="spec"><span>Охлаждение</span><b>2-башенное, тихое</b></div>
+            <div class="spec"><span>Корпус</span><b>Mesh, закалённое стекло</b></div>
           </div>
-        </div>
-        <div class="work work-side reveal">
-          <img src="static/images/builds/build-2.webp" alt="Детали сборки" loading="lazy">
-          <div class="work-info"><span class="mono-label">Деталь</span></div>
-        </div>
-        <div class="work work-side reveal">
-          <img src="static/images/builds/build-3.webp" alt="Охлаждение и кабель-менеджмент" loading="lazy">
-          <div class="work-info"><span class="mono-label">Деталь</span></div>
-        </div>
-        <div class="work work-side reveal">
-          <img src="static/images/builds/build-4.webp" alt="Компоновка и подсветка" loading="lazy">
-          <div class="work-info"><span class="mono-label">Деталь</span></div>
+          <a href="#contact" class="btn btn-ghost" data-cursor>Уточнить наличие <span class="btn-arrow">→</span></a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Process -->
-  <section id="process" class="section">
+  <section id="process" class="section section-alt">
     <div class="container">
       <div class="reveal">
-        <span class="mono-label eyebrow">// 05 — Как работаем</span>
+        <span class="mono-label eyebrow">// 04 — Процесс</span>
         <h2 class="section-title">Четыре шага</h2>
       </div>
       <div class="process-wrap">
@@ -202,7 +221,7 @@
             <div class="step-num">01</div>
             <div>
               <h4>Заявка</h4>
-              <p>Описываете задачу или поломку. Формат не важен — просто словами, в личные сообщения.</p>
+              <p>Описываете задачу или поломку — в личные сообщения Telegram или ВКонтакте. Формат не важен.</p>
             </div>
           </div>
           <div class="step">
@@ -216,7 +235,7 @@
             <div class="step-num">03</div>
             <div>
               <h4>Работа</h4>
-              <p>Подбор, сборка, установка, чистка. Фотоотчёт по запросу на каждом этапе.</p>
+              <p>Подбор, сборка, установка, чистка. Каждую операцию делаем аккуратно.</p>
             </div>
           </div>
           <div class="step">
@@ -235,38 +254,53 @@
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="section section-alt contact">
+  <section id="contact" class="section contact">
     <div class="container">
       <div class="reveal">
-        <span class="mono-label eyebrow">// 06 — Контакт</span>
+        <span class="mono-label eyebrow">// 05 — Контакт</span>
         <h2 class="section-title">Давайте начнём</h2>
         <p class="lead">Напишите или позвоните — отвечаем быстро. Работаем с 10:00 до 21:00, без выходных.</p>
       </div>
       <div class="contact-grid">
-        <a href="tel:+79066469996" class="contact-item reveal">
+        <a href="tel:+79066469996" class="contact-item reveal" data-cursor>
           <span class="mono-label">Телефон</span>
           <div class="value">+7 906 646-99-96</div>
         </a>
-        <div class="contact-item reveal">
+        <a href="https://vk.com/kasimovtehno" target="_blank" rel="noopener" class="contact-item reveal" data-cursor>
+          <span class="mono-label">ВКонтакте</span>
+          <div class="value">vk.com/kasimovtehno</div>
+        </a>
+        <a href="https://t.me/KasimovTehno" target="_blank" rel="noopener" class="contact-item reveal" data-cursor>
           <span class="mono-label">Telegram</span>
-          <div class="value">ЛС канала «Касимов Техно»</div>
-        </div>
-        <div class="contact-item reveal">
-          <span class="mono-label">Адрес</span>
-          <div class="value">г. Касимов, Рязанская область</div>
-        </div>
+          <div class="value">t.me/KasimovTehno</div>
+        </a>
       </div>
+      <p class="address mono-label">г. Касимов, Рязанская область</p>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="container footer-inner">
-      <a href="#" class="nav-logo">
-        <span class="dot"></span>
+      <a href="#top" class="nav-logo" data-cursor aria-label="Касимов Техно">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7">
+            <circle cx="16" cy="16" r="9"/>
+            <circle cx="16" cy="16" r="3.2"/>
+            <path d="M16 4.5v3M16 24.5v3M4.5 16h3M24.5 16h3M8 8l2.1 2.1M24 24l2.1 2.1M24 8l-2.1 2.1M8 24l2.1-2.1" stroke-linecap="round"/>
+          </svg>
+        </span>
         <span>Касимов<span class="logo-accent"> Техно</span></span>
       </a>
-      <span class="copy">© 2026 · Касимов Техно · Все права защищены</span>
+      <div class="footer-social">
+        <a href="https://vk.com/kasimovtehno" target="_blank" rel="noopener" aria-label="ВКонтакте" data-cursor>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.9 17.5c-4.6 0-7.5-3.1-7.6-8.3h2.3c.1 3.7 2 5.5 3.6 5.9V9.2h2.1v3.4c1.6-.1 3.2-2 3.7-3.4h2.1c-.4 2.2-2 4.1-3.1 4.9 1.2.6 2.7 2.3 3.3 5-1 .5-2.4 1-3.9 1z" transform="translate(-.5 -2) scale(.95) translate(0 2)"/></svg>
+        </a>
+        <a href="https://t.me/KasimovTehno" target="_blank" rel="noopener" aria-label="Telegram" data-cursor>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3 2.6 11.5c-1 .4-1 1.8.1 2.2l4.4 1.4 1.7 5.2c.3.9 1.4 1.1 2 .4l2.4-2.4 4.4 3.3c.7.5 1.7.1 1.9-.7l3-13.3c.2-1-.7-1.9-1.6-1.6z"/></svg>
+        </a>
+      </div>
+      <span class="copy">© 2026 · Касимов Техно</span>
     </div>
   </footer>
 
