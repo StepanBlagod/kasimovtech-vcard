@@ -1,15 +1,24 @@
-# Исходники фото
+# Исходники (RAW) фото
 1/
-# Экспорт телеграм
 ChatExport_2026-09-02/
 extracted_texts.txt
+2025*.jpg
+2026*.jpg
+photo_*.jpg
+
 # Скрипты конвертации
 convert_photos.py
+convert_premium.py
 extract.py
 _check.py
+_deploy_check.py
+_perm_check.py
+_push.py
 _repo.json
+
 # Локальный предпросмотр
 preview.html
+
 # Секреты
 .env
 *.env

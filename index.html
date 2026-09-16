@@ -5,6 +5,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Касимов Техно — компьютерная мастерская в Касимове</title>
   <meta name="description" content="Собираем, чиним и усиливаем компьютеры в Касимове. Сборка под ключ, апгрейд, диагностика бесплатно, гарантия на работы до 3 лет.">
+  <link rel="canonical" href="https://kasimov.tech/">
+
+  <!-- Open Graph — красивое превью в VK / Telegram / мессенджерах -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Касимов Техно">
+  <meta property="og:title" content="Касимов Техно — компьютерная мастерская в Касимове">
+  <meta property="og:description" content="Собираем, чиним и усиливаем ПК. Сборка под ключ, апгрейд, бесплатная диагностика, гарантия до 3 лет.">
+  <meta property="og:image" content="https://kasimov.tech/static/images/builds/build-black-asus.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="1200">
+  <meta property="og:locale" content="ru_RU">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Касимов Техно — компьютерная мастерская в Касимове">
+  <meta name="twitter:description" content="Собираем, чиним и усиливаем ПК. Сборка под ключ, апгрейд, бесплатная диагностика, гарантия до 3 лет.">
+  <meta name="twitter:image" content="https://kasimov.tech/static/images/builds/build-black-asus.webp">
+
+  <!-- Structured data — для выдачи в Google (мастерская, адрес, контакты) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Касимов Техно",
+    "description": "Компьютерная мастерская в Касимове: сборка ПК под ключ, апгрейд, диагностика, чистка, установка Windows.",
+    "url": "https://kasimov.tech/",
+    "image": "https://kasimov.tech/static/images/builds/build-black-asus.webp",
+    "telephone": "+79066469996",
+    "areaServed": "Касимов, Рязанская область",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Касимов",
+      "addressRegion": "Рязанская область",
+      "addressCountry": "RU"
+    },
+    "openingHours": "Mo-Su 10:00-20:00",
+    "sameAs": [
+      "https://vk.com/kasimovtehno",
+      "https://t.me/KasimovTehno"
+    ],
+    "makesOffer": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Сборка компьютера под ключ" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Апгрейд ПК" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Диагностика — бесплатно" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Чистка и замена термопасты" } }
+    ]
+  }
+  </script>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cg fill='none' stroke='%238B5CF6' stroke-width='1.6'%3E%3Ccircle cx='16' cy='16' r='9'/%3E%3Ccircle cx='16' cy='16' r='3.4'/%3E%3Cpath d='M16 5v3M16 24v3M5 16h3M24 16h3M7.8 7.8l2.1 2.1M22.1 22.1l2.1 2.1M24.2 7.8l-2.1 2.1M9.8 22.1l-2.1 2.1'/%3E%3C/g%3E%3C/svg%3E">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -32,15 +78,29 @@
       <a href="#process" data-cursor>Процесс</a>
       <a href="#contact" class="nav-cta" data-cursor>Записаться</a>
     </nav>
+    <button class="nav-burger" aria-label="Меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
     <div class="nav-social">
       <a href="https://vk.com/kasimovtehno" target="_blank" rel="noopener" aria-label="ВКонтакте" data-cursor>
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.9 17.5c-4.6 0-7.5-3.1-7.6-8.3h2.3c.1 3.7 2 5.5 3.6 5.9V9.2h2.1v3.4c1.6-.1 3.2-2 3.7-3.4h2.1c-.4 2.2-2 4.1-3.1 4.9 1.2.6 2.7 2.3 3.3 5-1 .5-2.4 1-3.9 1z" transform="translate(-.5 -2) scale(.95) translate(0 2)"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.9 17.5c-4.6 0-7.5-3.1-7.6-8.3h2.3c.1 3.7 2 5.5 3.6 5.9V9.2h2.1v3.4c1.6-.1 3.2-2 3.7-3.4h2.1c-.4 2.2-2 4.1-3.1 4.9 1.2.6 2.7 2.3 3.3 5-1 .5-2.4 1-3.9 1z"/></svg>
       </a>
       <a href="https://t.me/KasimovTehno" target="_blank" rel="noopener" aria-label="Telegram" data-cursor>
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3 2.6 11.5c-1 .4-1 1.8.1 2.2l4.4 1.4 1.7 5.2c.3.9 1.4 1.1 2 .4l2.4-2.4 4.4 3.3c.7.5 1.7.1 1.9-.7l3-13.3c.2-1-.7-1.9-1.6-1.6z"/></svg>
       </a>
     </div>
   </header>
+
+  <!-- Mobile menu -->
+  <div class="nav-mobile" id="navMobile">
+    <a href="#services">Услуги</a>
+    <a href="#build">Сборка</a>
+    <a href="#process">Процесс</a>
+    <a href="https://vk.com/kasimovtehno" target="_blank" rel="noopener">ВКонтакте</a>
+    <a href="https://t.me/KasimovTehno" target="_blank" rel="noopener">Telegram</a>
+    <a href="https://www.avito.ru/brands/a16ce59cd7eaa17d6a2a88f662ee1808" target="_blank" rel="noopener">Авито</a>
+    <a href="#contact" class="nav-cta">Записаться</a>
+  </div>
 
   <!-- Hero -->
   <section class="hero" id="top">
@@ -74,14 +134,14 @@
     <div class="stats-inner">
       <div class="stat"><b>0 ₽</b><span>Диагностика</span></div>
       <div class="stat"><b>до 3 лет</b><span>Гарантия на работы</span></div>
-      <div class="stat"><b>10:00–21:00</b><span>Без выходных</span></div>
+      <div class="stat"><b>10:00–20:00</b><span>Без выходных</span></div>
       <div class="stat"><b>Бессрочно</b><span>Поддержка</span></div>
     </div>
   </section>
 
   <!-- Detail banner (attention to detail) — сразу после hero -->
   <section class="detail-banner">
-    <img src="static/images/builds/build-4.webp" alt="Кабель-менеджмент и компоновка" loading="lazy">
+    <img src="static/images/builds/build-black-asus.webp" alt="Кабель-менеджмент и компоновка" loading="lazy">
     <div class="detail-caption">
       <span class="mono-label">Внимание к деталям</span>
       <p>
@@ -105,7 +165,7 @@
           </p>
         </div>
         <div class="approach-photo reveal">
-          <img src="static/images/builds/build-3.webp" alt="Детали сборки" loading="lazy">
+          <img src="static/images/builds/build-white-intel.webp" alt="Детали сборки" loading="lazy">
         </div>
       </div>
     </div>
@@ -184,7 +244,7 @@
     <div class="container">
       <div class="build-grid">
         <div class="build-photo reveal">
-          <img src="static/images/builds/build-1p.webp" alt="Игровая сборка — общий вид" loading="lazy">
+          <img src="static/images/builds/premium-1.webp" alt="Игровая сборка — общий вид" loading="lazy">
           <span class="build-tag mono-label">Готово к работе</span>
         </div>
         <div class="build-info reveal">
@@ -195,15 +255,38 @@
             уже установлены — включили и играете. Ниже магазинной цены.
           </p>
           <div class="spec-list">
-            <div class="spec"><span>Видеокарта</span><b>RTX 5060 Ti 16 GB</b></div>
-            <div class="spec"><span>Процессор</span><b>Intel Core i5-14400F</b></div>
+            <div class="spec"><span>Видеокарта</span><b>RTX 5070 12 GB</b></div>
+            <div class="spec"><span>Процессор</span><b>AMD Ryzen 7 7800X3D</b></div>
             <div class="spec"><span>Память</span><b>32 GB DDR5</b></div>
             <div class="spec"><span>Накопитель</span><b>1 TB NVMe SSD</b></div>
-            <div class="spec"><span>Охлаждение</span><b>2-башенное, тихое</b></div>
-            <div class="spec"><span>Корпус</span><b>Mesh, закалённое стекло</b></div>
+            <div class="spec"><span>Охлаждение</span><b>Водяное, 2-секционное</b></div>
+            <div class="spec"><span>Корпус</span><b>White, закалённое стекло</b></div>
           </div>
           <a href="#contact" class="btn btn-ghost" data-cursor>Уточнить наличие <span class="btn-arrow">→</span></a>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Works gallery — бесшовная авто-лента -->
+  <section class="gallery">
+    <div class="gallery-track">
+      <div class="gallery-group">
+        <figure class="gallery-item"><img src="static/images/builds/premium-1.webp" alt="Игровая сборка" loading="lazy"><figcaption class="mono-label">Игровая сборка</figcaption></figure>
+        <figure class="gallery-item"><img src="static/images/builds/build-flagship.webp" alt="Белая сборка" loading="lazy"><figcaption class="mono-label">Белая сборка</figcaption></figure>
+        <figure class="gallery-item"><img src="static/images/builds/build-white-intel.webp" alt="Белая сборка — крупный план" loading="lazy"><figcaption class="mono-label">Белая сборка</figcaption></figure>
+        <figure class="gallery-item"><img src="static/images/builds/premium-2.webp" alt="Водяное охлаждение" loading="lazy"><figcaption class="mono-label">Охлаждение</figcaption></figure>
+        <figure class="gallery-item"><img src="static/images/builds/premium-3.webp" alt="Материнская плата и железо" loading="lazy"><figcaption class="mono-label">Железо</figcaption></figure>
+        <figure class="gallery-item"><img src="static/images/builds/build-black-asus.webp" alt="Чёрная сборка" loading="lazy"><figcaption class="mono-label">Игровая сборка</figcaption></figure>
+        <figure class="gallery-item"><img src="static/images/builds/build-black-asus-2.webp" alt="Видеокарта" loading="lazy"><figcaption class="mono-label">Видеокарта</figcaption></figure>
+        <figure class="gallery-item"><img src="static/images/builds/build-black-asus-3.webp" alt="Охлаждение" loading="lazy"><figcaption class="mono-label">Охлаждение</figcaption></figure>
+        <figure class="gallery-item"><img src="static/images/builds/build-1p.webp" alt="Сборка" loading="lazy"><figcaption class="mono-label">Сборка</figcaption></figure>
+        <figure class="gallery-item"><img src="static/images/builds/build-2.webp" alt="Водяное охлаждение" loading="lazy"><figcaption class="mono-label">Охлаждение</figcaption></figure>
+        <figure class="gallery-item"><img src="static/images/builds/build-3.webp" alt="Видеокарта" loading="lazy"><figcaption class="mono-label">Видеокарта</figcaption></figure>
+        <figure class="gallery-item"><img src="static/images/builds/build-4.webp" alt="Температура" loading="lazy"><figcaption class="mono-label">Температура</figcaption></figure>
+        <figure class="gallery-item"><img src="static/images/builds/workshop-1.webp" alt="Мастерская" loading="lazy"><figcaption class="mono-label">Мастерская</figcaption></figure>
+        <figure class="gallery-item"><img src="static/images/builds/workshop-2.webp" alt="Мастерская" loading="lazy"><figcaption class="mono-label">Мастерская</figcaption></figure>
+        <figure class="gallery-item"><img src="static/images/builds/workshop-3.webp" alt="Мастерская" loading="lazy"><figcaption class="mono-label">Мастерская</figcaption></figure>
       </div>
     </div>
   </section>
@@ -247,7 +330,7 @@
           </div>
         </div>
         <div class="process-photo reveal">
-          <img src="static/images/builds/build-2.webp" alt="Процесс сборки" loading="lazy">
+          <img src="static/images/builds/build-black-asus-3.webp" alt="Процесс сборки" loading="lazy">
         </div>
       </div>
     </div>
@@ -259,7 +342,7 @@
       <div class="reveal">
         <span class="mono-label eyebrow">// 05 — Контакт</span>
         <h2 class="section-title">Давайте начнём</h2>
-        <p class="lead">Напишите или позвоните — отвечаем быстро. Работаем с 10:00 до 21:00, без выходных.</p>
+        <p class="lead">Напишите или позвоните — отвечаем быстро. Работаем с 10:00 до 20:00, без выходных.</p>
       </div>
       <div class="contact-grid">
         <a href="tel:+79066469996" class="contact-item reveal" data-cursor>
@@ -273,6 +356,10 @@
         <a href="https://t.me/KasimovTehno" target="_blank" rel="noopener" class="contact-item reveal" data-cursor>
           <span class="mono-label">Telegram</span>
           <div class="value">t.me/KasimovTehno</div>
+        </a>
+        <a href="https://www.avito.ru/brands/a16ce59cd7eaa17d6a2a88f662ee1808" target="_blank" rel="noopener" class="contact-item reveal" data-cursor>
+          <span class="mono-label">Авито</span>
+          <div class="value">Авито</div>
         </a>
       </div>
       <p class="address mono-label">г. Касимов, Рязанская область</p>
@@ -294,7 +381,7 @@
       </a>
       <div class="footer-social">
         <a href="https://vk.com/kasimovtehno" target="_blank" rel="noopener" aria-label="ВКонтакте" data-cursor>
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.9 17.5c-4.6 0-7.5-3.1-7.6-8.3h2.3c.1 3.7 2 5.5 3.6 5.9V9.2h2.1v3.4c1.6-.1 3.2-2 3.7-3.4h2.1c-.4 2.2-2 4.1-3.1 4.9 1.2.6 2.7 2.3 3.3 5-1 .5-2.4 1-3.9 1z" transform="translate(-.5 -2) scale(.95) translate(0 2)"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.9 17.5c-4.6 0-7.5-3.1-7.6-8.3h2.3c.1 3.7 2 5.5 3.6 5.9V9.2h2.1v3.4c1.6-.1 3.2-2 3.7-3.4h2.1c-.4 2.2-2 4.1-3.1 4.9 1.2.6 2.7 2.3 3.3 5-1 .5-2.4 1-3.9 1z"/></svg>
         </a>
         <a href="https://t.me/KasimovTehno" target="_blank" rel="noopener" aria-label="Telegram" data-cursor>
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3 2.6 11.5c-1 .4-1 1.8.1 2.2l4.4 1.4 1.7 5.2c.3.9 1.4 1.1 2 .4l2.4-2.4 4.4 3.3c.7.5 1.7.1 1.9-.7l3-13.3c.2-1-.7-1.9-1.6-1.6z"/></svg>

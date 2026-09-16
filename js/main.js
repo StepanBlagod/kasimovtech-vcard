@@ -72,3 +72,37 @@
   window.addEventListener('scroll', update, { passive: true });
   window.addEventListener('resize', update);
 })();
+
+// Seamless gallery marquee — дублируем ленту для бесшовного цикла
+(function () {
+  const group = document.querySelector('.gallery-group');
+  const track = document.querySelector('.gallery-track');
+  if (!group || !track) return;
+  const clone = group.cloneNode(true);
+  clone.setAttribute('aria-hidden', 'true');
+  track.appendChild(clone);
+})();
+
+// Mobile menu
+(function () {
+  const burger = document.querySelector('.nav-burger');
+  const menu = document.getElementById('navMobile');
+  if (!burger || !menu) return;
+
+  const close = () => {
+    burger.classList.remove('open');
+    menu.classList.remove('open');
+    burger.setAttribute('aria-expanded', 'false');
+  };
+
+  burger.addEventListener('click', () => {
+    const open = menu.classList.toggle('open');
+    burger.classList.toggle('open', open);
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+
+  menu.querySelectorAll('a').forEach((a) => a.addEventListener('click', close));
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') close();
+  });
+})();
